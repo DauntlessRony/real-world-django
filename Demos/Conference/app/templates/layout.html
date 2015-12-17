@@ -33,6 +33,7 @@
 			<div class="collapse navbar-collapse" id="nav-toggle">
 				<ul class="nav navbar-nav">
 					<li><a href="{% url 'sessions_list' %}">Sessions</a></li>
+
 					{% if user.is_authenticated %}
 						<li><a href="{% url 'logout' %}">Logout</a></li>
 					{% else %}
