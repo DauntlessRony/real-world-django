@@ -11,6 +11,6 @@ class SessionForm(ModelForm):
         super(SessionForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.form_class = 'form-horizontal'
-        self.helper.label_class = 'col-md-offset-1 col-md-2'
-        self.helper.field_class = 'col-md-8'
+        self.helper.label_class = 'col-sm-offset-1 col-sm-2'
+        self.helper.field_class = 'col-sm-8'
         self.helper.add_input(Submit('submit', 'Submit'))

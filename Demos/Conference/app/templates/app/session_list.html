@@ -2,17 +2,17 @@
 
 {% block content %}
 	{% for session in object_list %}
-	<div class="col-md-8">
+	<div class="col-sm-8">
 		<a href="{% url 'sessions_detail' session.pk %}">
 			{{ session.title }}
 		</a>
 	</div>
-	<div class="col-md-2">
+	<div class="col-sm-2">
 		<a href="{% url 'sessions_update' session.pk %}">
 			Update
 		</a>
 	</div>
-	<div class="col-md-2">
+	<div class="col-sm-2">
 		<a href="{% url 'sessions_delete' session.pk %}">
 			Delete
 		</a>
