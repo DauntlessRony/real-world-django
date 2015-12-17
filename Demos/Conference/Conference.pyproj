@@ -40,16 +40,28 @@
     <Compile Include="manage.py" />
     <Compile Include="Conference\__init__.py" />
     <Compile Include="Conference\settings.py" />
-    <Compile Include="Conference\urls.py" />
     <Compile Include="Conference\wsgi.py" />
+    <Compile Include="Conference\urls.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="app\templates\app\session_detail.html" />
+    <Content Include="app\templates\app\session_form.html" />
+    <Content Include="app\templates\app\session_list.html" />
+    <Content Include="app\templates\app\submit_session.html" />
+    <Content Include="app\templates\auth\login.html" />
+    <Content Include="app\templates\auth\register.html" />
+    <Content Include="app\templates\auth\registered.html" />
+    <Content Include="app\templates\index.html" />
+    <Content Include="app\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="Conference\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="app\templates\auth\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
